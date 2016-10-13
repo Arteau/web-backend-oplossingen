@@ -1,0 +1,1 @@
+deel 2 niet gevalideerd in W3, krijg errors ivm de php maar lijkt me vreemd
