@@ -10,6 +10,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Oplossing Looping For: Deel 1</title>
+    <link rel="stylesheet" href="http://web-backend.local/css/global.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
 <body>
    <table>

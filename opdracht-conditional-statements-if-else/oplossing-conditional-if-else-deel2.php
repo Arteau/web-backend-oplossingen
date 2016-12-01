@@ -13,6 +13,9 @@
 <head>
     <meta charset="UTF-8">
     <title>if else 2</title>
+    <link rel="stylesheet" href="http://web-backend.local/css/global.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
 <body>
     <h2><?php echo "in ".$aantalSeconden." seconden zitten:"; ?></h2>

@@ -10,6 +10,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Oplossing String Concatenate</title>
+    <link rel="stylesheet" href="http://web-backend.local/css/global.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
 <body>
    <p>De Volledige naam is <?php print $volledigeNaam; ?></p>

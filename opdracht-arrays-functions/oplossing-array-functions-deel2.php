@@ -33,6 +33,9 @@
 <head>
     <meta charset="UTF-8">
     <title>arrays functions 2</title>
+    <link rel="stylesheet" href="http://web-backend.local/css/global.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
 <body>
     <pre><?php print_r($dierenArray); ?></pre>

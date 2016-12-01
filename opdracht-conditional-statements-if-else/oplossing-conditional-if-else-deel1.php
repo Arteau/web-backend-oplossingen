@@ -47,6 +47,9 @@
 <head>
     <meta charset="UTF-8">
     <title>If Else</title>
+    <link rel="stylesheet" href="http://web-backend.local/css/global.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
 <body>
     <p><?php echo $jaartalMessage; ?></p>

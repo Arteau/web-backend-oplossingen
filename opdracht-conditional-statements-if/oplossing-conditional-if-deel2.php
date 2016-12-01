@@ -44,6 +44,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Conditional Statements 1</title>
+    <link rel="stylesheet" href="http://web-backend.local/css/global.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
 <body>
     <p><?php echo $weekdag; ?></p>

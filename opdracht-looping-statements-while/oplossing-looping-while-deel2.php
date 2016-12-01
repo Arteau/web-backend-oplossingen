@@ -9,6 +9,9 @@
 <head>
     <meta charset="UTF-8">
     <title>while 2</title>
+    <link rel="stylesheet" href="http://web-backend.local/css/global.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
+    <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
 <body>
     <ul>
