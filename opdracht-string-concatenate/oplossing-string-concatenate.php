@@ -16,6 +16,7 @@
 </head>
 <body>
    <p>De Volledige naam is <?php print $volledigeNaam; ?></p>
-   <p>De volledige naam bestaat uit <?php print $volledigeNaamLengte; ?> tekens.</p>
+   <p>De volledige naam bestaat uit 
+   <?=  $volledigeNaamLengte ?> tekens.</p>
 </body>
 </html>

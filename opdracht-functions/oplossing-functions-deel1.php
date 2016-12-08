@@ -22,18 +22,7 @@
             return false;
         }
     }
-    
-    function printEvenOneven($bool)
-    {
-        if($bool)
-        {
-            echo "even";
-        }
-        else
-        {
-            echo "oneven";
-        }
-    }
+  
 
 
 ?>
@@ -49,13 +38,13 @@
 </head>
     <body>
     <p>
-        <?php echo "De som van 4+5 = ".berekenSom(4, 5); ?>
+        <?= "De som van 4+5 = ".berekenSom(4, 5) ?>
     </p>
     <p>
-        <?php echo "het product van 4x5 = ".vermenigvuldig(4,5); ?>
+        <?= "het product van 4x5 = ".vermenigvuldig(4,5) ?>
     </p>
-    <p>
-       <?php echo "het getal 4 is ".printEvenOneven(iseven(4))."."; ?>
+    <p> het getal 4 is
+       <?= ( iseven( 4 ) ) ? "even" : "oneven" ?>
     </p>
     
     </body>
