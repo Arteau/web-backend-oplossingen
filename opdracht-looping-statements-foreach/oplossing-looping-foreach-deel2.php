@@ -1,33 +1,14 @@
-<?php   
+<?php
     $text = file_get_contents("text-file.txt");
-    
-    $textChars = str_split($text);
-    rsort($textChars);
-    $reversedTextChars = array_reverse($textChars);
-    
     $alphabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z");
 
+    $textChars = str_split($text);
     $charCount = array();
-    
-//    for($i=0; $i<26; $i++ )
-//    {
-//        foreach($reversedTextChars as $character)
-//        {
-//            $charCount[$i] = substr_count($character, $alphabet[$i]);
-//        }
-//       
-//    }
 
-    foreach ($reversedTextChars as $value)
+ 
+    foreach($textChars as $character)
     {
-        if(isset ($charCount[$value]))
-        {
-            $charCount[$value]++;
-        }
-        else
-        {
-            $charCount[$value] = 1;    
-        }
+        $charCount[] = substr_count($text, $character);
     }
 
     
@@ -43,12 +24,12 @@
     <link rel="stylesheet" href="http://web-backend.local/css/facade.css">
     <link rel="stylesheet" href="http://web-backend.local/css/directory.css">
 </head>
-<body>
-    <p>
-    <?php echo $text; ?>
-    </p>
-    <p>
-        <?php var_dump($charCount); ?>
-    </p>
-</body>
+    <body>
+    <?php  
+        for($i = 0; $i<26; $i++)
+    {
+        $message = $alphabet[$i]." = ".$charCount[$i];
+            echo "<p>".$message."</p>";
+    } ?>
+    </body>
 </html>
