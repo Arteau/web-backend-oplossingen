@@ -69,7 +69,7 @@ pagina moet herladen worden met "eerstevijftig" op false, en zodanig worden hert
 				        <?= (!$idIsSet) ? nl2br(eersteVijftigChars($artikel['inhoud'])."..."):nl2br($artikel["inhoud"]);?>
 				    </p>
 				    <?php if(!$idIsSet) : ?>
-				    <a href=<?= "index.php?id=".$id ?>>lees meer</a>
+				    <a href="oplossing-get-deel1.php?id=<?= $id ?>">lees meer</a>
 				    <?php endif ?>
 
 				    <img src="img/<?= $artikel['afbeelding'] ?>">
