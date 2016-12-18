@@ -27,9 +27,13 @@
         
         if(array_key_exists($id, $artikels)) {
             
-            $artikels = array($artikels[$id]);
-		  $idIsSet = true;
+         $artikels = array($artikels[$id]);
+		 $idIsSet = true;
             
+        }
+        else {
+            $idIsSet = false;
+            echo "deze pagina wordt niet herkend.";
         }
     }
         
@@ -66,7 +70,11 @@ pagina moet herladen worden met "eerstevijftig" op false, en zodanig worden hert
 				        <?= nl2br($artikel["titel"]) ?>
 				    </h1>
 				    <p>
-				        <?= (!$idIsSet) ? nl2br(eersteVijftigChars($artikel['inhoud'])."..."):nl2br($artikel["inhoud"]);?>
+				        <?php if(!$idIsSet) : ?>
+				        <?= nl2br(eersteVijftigChars($artikel['inhoud'])."...") ?>
+				        <?php else : ?>
+				        <?= nl2br($artikel["inhoud"]); ?>
+				        <?php endif ?>
 				    </p>
 				    <?php if(!$idIsSet) : ?>
 				    <a href="oplossing-get-deel1.php?id=<?= $id ?>">lees meer</a>
