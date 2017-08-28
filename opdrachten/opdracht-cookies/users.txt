@@ -1,0 +1,14 @@
+
+{
+"users" : [
+        {
+        "naam":"jan",
+        "paswoord":"paswoord01"
+        },
+        {
+        "naam":"arteau",
+        "paswoord":"admin01"
+        }
+    ]
+
+}

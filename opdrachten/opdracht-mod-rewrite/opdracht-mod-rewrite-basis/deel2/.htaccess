@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^rasmus$ index.php?user=rasmus
+RewriteRule ^$ index.php?user=null

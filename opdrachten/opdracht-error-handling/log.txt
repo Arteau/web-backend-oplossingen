@@ -1,0 +1,3 @@
+[23:31:36 27/08/2017] - 127.0.0.1 - type: [ERROR] De kortingscode heeft niet de juiste lengte.	14
+[23:31:43 27/08/2017] - 127.0.0.1 - type: [ERROR] De kortingscode heeft niet de juiste lengte.	456789
+

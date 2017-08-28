@@ -1,0 +1,37 @@
+    <!-- bodypart -->
+    <h1>Include and Require</h1>
+    <strong>Stitching html together with php</strong>
+    <p>Include and require is an easy way to make your workflow with html documents more efficient</p>
+    <p>by 'including' pieces of html you re-use a lot. Meaning you don't have to type the same code</p>
+    <p>over and over again</p>
+    <hr>
+
+
+
+    <?php 
+    
+        function tagHelper($tags){
+            $tagString = "";
+            
+            foreach($tags as $tag)
+            {
+                $tagString = $tagString." ".$tag.", ";
+            }
+            return substr($tagString, 0,strlen($tagString)-2); //-2 om de laatse komma te verwijderen.
+        }
+
+        foreach($artikels as $artikel)
+        {
+
+
+
+            echo"
+            <div>
+                <h1>".$artikel["title"]."</h1>
+                <p>".$artikel["text"]."
+                <p><small>".tagHelper($artikel["tags"])."</small></p>
+            </div>
+            ";
+        }
+    
+    ?>
